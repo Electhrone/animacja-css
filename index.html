@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+@keyframes example {
+0% {background-color: yellow; border-radius: 50px;}
+35% {background-color: green; transform: rotate(90deg) translate(650px, -400px) scaleX(.2) scaleY(12); border-radius: 0px;}
+55% {background-color: green; transform: rotate(90deg) translate(650px, -400px) scaleX(.2) scaleY(12); border-radius: 0px;}
+90% {background-color: yellow; transform: rotate(0deg) translate(0px, 0px) scaleX(1) scaleY(1); border-radius: 50px;}
+100% {background-color: yellow; transform: rotate(0deg) translate(0px, 0px) scaleX(1) scaleY(1); border-radius: 50px;}
+}
+
+div {
+width: 100px;
+height: 100px;
+background-color: yellow;
+border-radius: 50px;
+animation-name: example;
+animation-duration: 12s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+transform-origin: center;
+transition: ease-in-out 0.7s;
+}
+
+</style>
+
+</head>
+<body>
+
+<p>Słońce zamienia się w trawę.</p>
+<div></div>
+
+</body>
+</html>
